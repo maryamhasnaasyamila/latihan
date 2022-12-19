@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berbentuk dropdown</title>
+</head>
+<body>
+
+    <script>
+        let fruits = ["Papaya", "Mango", "Apple", "Banana"];
+        console.log("Jumlah buah: " + fruits.length);
+        console.log("Buah kedua adalah "+fruits[1]);
+        fruits.push("Strawberry");
+        fruits.sort()
+        let i = 0;
+        document.write("Pilih buah: <select name=\"buah\">");
+            for(i = 0; i < fruits.length; i++){
+                console.log("Buah index ke-" + i + " adalah: " + fruits[i]);
+                document.write("<li>" + fruits[i] + "</li>");
+                document.write("<option>" + fruits[i] + "</option>");
+            }
+        document.write("</select>");
+    </script>
+</body>
+</html>
